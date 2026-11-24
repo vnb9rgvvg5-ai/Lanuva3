@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า — LANUVA Scent &amp; Silk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">LANUVA</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container page-header">
+      <h1>สั่งซื้อสินค้า</h1>
+      <hr class="rule">
+      <p class="lead">กรอกข้อมูลของคุณ เราจะติดต่อกลับเพื่อยืนยันคำสั่งซื้อ</p>
+    </div>
+
+    <div class="container">
+      <form id="orderForm" class="form">
+        <div class="field field--required">
+          <label for="customerName">ชื่อลูกค้า</label>
+          <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+        </div>
+
+        <div class="field field--required">
+          <label for="contact">เบอร์โทร / Line</label>
+          <input type="text" id="contact" name="contact" autocomplete="tel" required>
+        </div>
+
+        <div class="field field--required">
+          <label for="items">รายการสินค้า</label>
+          <input type="text" id="items" name="items" required>
+          <span class="field__hint">เติมให้อัตโนมัติจากสินค้าที่เลือก แก้ไขได้หากต้องการสั่งหลายรายการ</span>
+        </div>
+
+        <div class="field field--required">
+          <label for="total">จำนวนเงินรวม (บาท)</label>
+          <input type="text" id="total" name="total" inputmode="decimal" required>
+        </div>
+
+        <div class="field">
+          <label for="note">หมายเหตุ</label>
+          <textarea id="note" name="note"></textarea>
+        </div>
+
+        <div class="form__actions">
+          <button type="submit" class="btn btn--solid">ยืนยันสั่งซื้อ</button>
+          <a class="link-quiet" href="product.html">กลับไปเลือกสินค้า</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="brand">LANUVA</p>
+      <p>&copy; 2026 LANUVA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
